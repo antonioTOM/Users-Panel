@@ -1,0 +1,16 @@
+body {
+  background-color: #5B9EED;
+  border: solid 1px white;
+}
+div {
+  border: solid 1px black;
+}
+ul {
+  border: solid 1px blue;
+}
+li {
+  border: solid 1px red;
+}
+ {
+  border: solid 1px;
+}
