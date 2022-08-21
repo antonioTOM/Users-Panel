@@ -50,3 +50,4 @@ const div = document.querySelector(
 const divLink = div.getAttribute(
   "onclick");
 console.log(divLink);
+console.log(usersImage[1]);
