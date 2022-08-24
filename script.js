@@ -1,5 +1,13 @@
 const usersName = document.querySelectorAll("h4");
 const usersAddress = document.querySelectorAll("p");
+const usersImage = document.querySelectorAll("img");
+var a;
+function getUserImgSrc() {
+  const usImgSrc = usersImage[a].getAttribute("src");
+  console.log(usImgSrc);
+}
+a = 0;
+getUserImgSrc();
 
 class User {
   constructor(image, name, username, bio, email, phoneNumber, address, birthDate, gender) {
@@ -23,11 +31,6 @@ class User {
       this.gender = "Female";
     }
   }
-  getUserImgSrc(a){
-  const usersImage = document.querySelectorAll("img");
-  const usImgSrc = usersImage[a].getAttribute("src");
-  return usImgSrc
-}
 }
 
 const testUser = new User ("Anto", "anttom07", "Hi me is me, I'm Italian and I'm 15", "anttom0713@gmail.com", "327 630 3660", "via Isonzo, 130", "13/07/2007");
@@ -54,4 +57,3 @@ const div = document.querySelector(
 const divLink = div.getAttribute(
   "onclick");
 console.log(divLink);
-console.log(usImgSrc);
