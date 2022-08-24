@@ -1,5 +1,3 @@
-const usersImage = document.querySelectorAll("img");
-var a = undefined;
 const usersName = document.querySelectorAll("h4");
 const usersAddress = document.querySelectorAll("p");
 
@@ -25,8 +23,12 @@ class User {
       this.gender = "Female";
     }
   }
+  getUserImgSrc(a){
+  const usersImage = document.querySelectorAll("img");
+  const usImgSrc = usersImage[a].getAttribute("src");
+  return usImgSrc
 }
-a = 1;
+}
 
 const testUser = new User ("Anto", "anttom07", "Hi me is me, I'm Italian and I'm 15", "anttom0713@gmail.com", "327 630 3660", "via Isonzo, 130", "13/07/2007");
 testUser.isGenderMorF(1);
@@ -53,4 +55,3 @@ const divLink = div.getAttribute(
   "onclick");
 console.log(divLink);
 console.log(usImgSrc);
-const usImgSrc = usersImage[a].getAttribute("src");
