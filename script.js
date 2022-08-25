@@ -1,6 +1,6 @@
-const usersName = document.querySelectorAll("h4");
-const usersAddress = document.querySelectorAll("p");
-const usersImage = document.querySelectorAll("img");
+const usersName = document.querySelectorAll(".document1_h4");
+const usersAddress = document.querySelectorAll(".document1_p");
+const usersImage = document.querySelectorAll(".document1_img");
 function getUserImgSrc(a) {
   const usImgSrc = usersImage[a].getAttribute("src");
   return usImgSrc
@@ -46,11 +46,28 @@ const user3 = new User (getUserImgSrc(2), usersName[2].innerText, "It'sDeanGuys"
 user3.isGenderMorF(1);
 console.log(user3);
 
-function account1() {
+let allUsers = [user1, user2, user3];
+var selctUser;
+
+// function account0 potrebbe essere sostituita da una funzione generica valida per tutti gli utenti che reindirizza a standard-profile.html con un parametro che specifica di quale utente si tratta (da puntualizzare nell'onclick dell'html), che con un if statement compila intelligentemente gli appositi spazi nello s-p.html
+function account0() {
   window.location.href = "standard-profile.html"
+  selctUser = 0;
 }
+
+if(selctUser = 0) {
+  document.querySelector(".profile_img").getAttribute("src") = user1.image;
+}
+
+function goBack() {
+  window.location.href = "index.html"
+}
+
 const div = document.querySelector(
   "#abc");
 const divLink = div.getAttribute(
   "onclick");
 console.log(divLink);
+export function leo(x) {
+  return leo + " è un porcello!"
+}
